@@ -4,11 +4,17 @@
 Step by Step:
 
 1. setup the Project
-   - npm init -y  //file init
-   - npm i express mongoose // install basic 
+   - npm init -y  //Initialize the Project
+   - npm i express mongoose // Install Dependencies
    - npm i morgar //morgan for 
    - npm i dotenv  //dotenv for security
    - connect mongodb
+
+## Package Purpose:
+express → Backend framework
+mongoose → MongoDB ODM
+morgan → Request logger (middleware)
+dotenv → Manage environment variables securely
 
 ## package.js setup
   
@@ -18,21 +24,23 @@ Step by Step:
 
 ## connect mongodb
   
-  - search: mongodb atlas
-  - create a Project in mongobd
-  - delete ip address
-  - add ip address: 0.0.0.0   //it's mean all ip are allow
-  - then access and add name and password
-  - connect db
-  - done
+  - Go to MongoDB Atlas
+  - Create a new project
+  - Create a cluster
+  - Configure database access:
+    -- Add a username & password
+  - Network access:
+    -- Add IP: 0.0.0.0 (allow all IPs)
+  - Connect your database:
+    -- Copy your connection string
 
 
 
 
 
-.env
+## Environment Variables(.env)
 
-mongo_uri=mongodb+srv://authentication_system:u598MyQ2uFYOwnnU@authenticationsystem.2tnu1wh.mongodb.net/
+ - MONGO_URI=mongodb+srv://<username>:<password>@cluster-url.mongodb.net/
 
 
 
